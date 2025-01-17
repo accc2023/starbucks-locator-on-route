@@ -1,0 +1,75 @@
+#map {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    /*border: 4px solid #00704A; !* Green border (looks good?) *!*/
+    /*border-radius: 8px; !* looks good? *!*/
+}
+
+#output {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px auto;
+    /* Added Starbucks theme colors to output */
+    background-color: #D4E9E2 !important; /* Light Starbucks green */
+    color: #00704A !important; /* Dark Starbucks green */
+}
+
+.alert-danger {
+    background-color: #D4E9E2 !important; /* Light Starbucks green */
+    color: #00704A !important; /* Dark Starbucks green */
+}
+
+.alert-info {
+    background-color: #D4E9E2 !important; /* Light Starbucks green */
+    color: #00704A !important; /* Dark Starbucks green */
+}
+
+body {
+    /* Previous design choices */
+    /*color: #23527c !important;*/
+    /*font-family: "Poppins", sans-serif;*/
+
+    color: #00704A !important; /* Starbucks Green for text */
+    font-family: "Lato", sans-serif; /* Clean, modern font */
+}
+
+.jumbotron {
+    /* Previous design choice */
+    /*background-color: darksalmon !important;*/
+    background-color: #F6F6F6 !important; /* Cool grey background */
+    /* #FFF5E1 = beige (previous) */
+    margin: 0;
+    padding: 10px;
+    border-bottom: 4px solid #00704A; /* Add green border at the bottom */
+}
+.jumbotron h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #00704A; /* Starbucks Green */
+}
+.jumbotron h1, .jumbotron p {
+    text-align: center;
+}
+
+.jumbotron p {
+    font-size: 1em;
+    color: #000; /* Black text */
+}
+
+/* Form submission formatting */
+.form-horizontal .form-group label {
+    font-size: 1em;
+    color: #00704A; /* Starbucks Green */
+}
+
+
+/* Undecided design choice */
+/*.form-control {*/
+/*    border: 2px solid #00704A; !* Green border *!*/
+/*    border-radius: 8px;*/
+/*    background-color: #FFF; !* White input background *!*/
+/*}*/
+
+/* Button */
+
