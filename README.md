@@ -103,7 +103,7 @@
 * ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 * ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-* [![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+* ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 <!-- * [![JQuery][JQuery.com]][JQuery-url] -->
@@ -134,8 +134,7 @@ Ensure that following technologies are installed:
    git clone https://github.com/accc2023/starbucks-locator-on-route.git
    ```
 
-5. Navigate to backend<br />
-  Install flask.
+5. Navigate to the backend folder. Install flask.
     ```bash
     pip install flask
     ```
@@ -147,7 +146,7 @@ Ensure that following technologies are installed:
 
     Now retry the pip command.
 
-6. Get a free Google API Key through following instructions on this site: https://cloud.google.com/docs/authentication/api-keys
+6. Get a free Google API Key by following the instructions on this site: https://cloud.google.com/docs/authentication/api-keys. Make sure you enable the key to be used for map-related API calls.
 
 7. Generate an API key. Navigate to the frontend folder and to index.html.
 8. Replace the placeholder for API_KEY with your actual API credentials:
@@ -159,9 +158,9 @@ Ensure that following technologies are installed:
     </script>
    ```
 
-9. Start the site by running the file (click the run button). You should now be taken to the webpage on your browser.
+9. Start the site by running the index.html file (click the run button). You should now be taken to the webpage on your browser.
 
-10. Navigate to the backend folder and to starbucks_locations.py and run the file (click the run button)
+10. Navigate to the backend folder and to starbucks_locations.py and run the file (click the run button).
 
 11. Navigate back to the webpage. It is now ready to be used. Enjoy!
 
@@ -173,13 +172,6 @@ Ensure that following technologies are installed:
 ## Usage
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
-
-![Product Screen Shot 1][product-screenshot-1]
-
-Here is a screenshot of myself on the page after clicking the "Hunt Jobs" button on the navbar. Here you can type in input parameters so that the backend can send an API request to the Adzuna servers to search for jobs based on the preferences.
-<br /><br />
-The only required parameters are "Search" and "Country". The rest are optional and the backend is able to handle omission of input in the optional fields.
-<br /><br />
 
 ![Product Screen Shot 2][product-screenshot-2]
 
@@ -255,7 +247,7 @@ Distributed under the MIT license. See `LICENSE.txt` for more information.
 
 Arhan Chhabra - arhanc21@gmail.com
 
-Project Link: [https://github.com/accc2023/personal-job-portal](https://github.com/accc2023/personal-job-portal)
+Project Link: [https://github.com/accc2023/starbucks-locator-on-route.git](https://github.com/accc2023/starbucks-locator-on-route.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
