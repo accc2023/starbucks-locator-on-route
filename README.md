@@ -101,7 +101,7 @@
 <!-- * [![Next][Next.js]][Next-url] -->
 
 * ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-* ![Flask](https://img.shields.io/badge/Flash-E34F26?style=for-the-badge&logo=adobe&logoColor=white)
+* ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 * [![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -129,68 +129,41 @@ Ensure that following technologies are installed:
 
 ### Installation
 
-1. Install PostgreSQL and create a new database (e.g., `jobportal`).
-2. Open `pgAdmin` and set up a new user with a username and password.
-3. Create a table in the database using the schema below:
-
-```sql
-CREATE TABLE job_post (
-    post_id BIGINT PRIMARY KEY,
-    post_desc CHARACTER VARYING(1000),
-    post_profile CHARACTER VARYING(255),
-    post_tech_stack CHARACTER VARYING(255)[],
-    req_experience INTEGER,
-    company CHARACTER VARYING(255),
-    location CHARACTER VARYING(255),
-    post_date CHARACTER VARYING(255),
-    redirect_url CHARACTER VARYING(255),
-    salary_max DOUBLE PRECISION,
-    salary_min CHARACTER VARYING(255),
-    salary DOUBLE PRECISION
-);
-```
-
-4. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/accc2023/personal-job-portal.git
+   git clone https://github.com/accc2023/starbucks-locator-on-route.git
    ```
 
-5. Navigate to src/main/resources/application.properties<br />
-  Add your PostgreSQL username, password, and database name:
-  (Postgres is usually hosted on port 5433 or 5432)
-    ```properties
-    spring.datasource.url=jdbc:postgresql://localhost:port_postgres_hosted/your_database_name
-    spring.datasource.username=your_username
-    spring.datasource.password=your_password
+5. Navigate to backend<br />
+  Install flask.
+    ```bash
+    pip install flask
     ```
 
-6. Get a free API Key and Application ID at [https://developer.adzuna.com](https://developer.adzuna.com)
-7. Generate an API key and Application ID. Navigate to the JobRestController class in the backend (src/main/java/com/example/jobportal/JobRestController.java).
-8. Replace the placeholders for APP_ID and API_KEY with your actual API credentials:
-   ```java
-    private static final String appId = "your_app_id";
-    private static final String appKey = "your_api_key";
+    If you cannot install flask like this, first activate your virtual environment:
+    ```bash
+    .\venv\Scripts\activate
+    ```
+
+    Now retry the pip command.
+
+6. Get a free Google API Key through following instructions on this site: https://cloud.google.com/docs/authentication/api-keys
+
+7. Generate an API key. Navigate to the frontend folder and to index.html.
+8. Replace the placeholder for API_KEY with your actual API credentials:
+   ```HTML
+    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places"></script>
+
+    <script defer
+      src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap">
+    </script>
    ```
 
-9. Configure Lombok annotations (click "yes" on the pop ups) and then click "Run" button on the IDE.<br /> If this does not appear by default, navigate to (job-portal-backend/src/java/com.arhan.springbootrest/SpringBootRestApplication).<br /> Then the "Run" button should now appear on your IDE.
+9. Start the site by running the file (click the run button). You should now be taken to the webpage on your browser.
 
-10. Navigate (on IDE terminal) to job-portal-frontend and then install NPM packages:
-   ```sh
-   npm install
-   ```
+10. Navigate to the backend folder and to starbucks_locations.py and run the file (click the run button)
 
-11. After successfully installing, start NPM.
-   ```sh
-   npm start
-   ```
-
-12. NPM start should navigate you to localhost::3000 and the job portal is now live. Enjoy the application!
-
-13. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin accc2023/personal-job-portal
-   git remote -v # confirm the changes
-   ```
+11. Navigate back to the webpage. It is now ready to be used. Enjoy!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
