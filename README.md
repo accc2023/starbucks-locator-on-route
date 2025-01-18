@@ -34,7 +34,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">My Job Vault</h3>
+<h3 align="center">Starbucks Locator on Route</h3>
 
   <p align="left">
     I have created a Starbucks route locator for individuals to use when road tripping. You can simply input your origin and destination into the Google Maps embedded interface and red markers marking nearby Starbucks stores on your route will appear. For now, you can distinguish between only in person stores and the addition of a store having a Drive Thru feature, which would be perferct for quick stops on a long road trip. The project consists of a backend built using Python (Flask). The backend scrapes the Starbucks Store locator site with multiple spaced out coordinates along the route to ensure all stores en route have been discovered. Note that I introduce a time delay after each query to ensure the site does not get overloaded with multiple GET requests at a time.
@@ -217,15 +217,18 @@ The only required parameters are "Search" and "Country". The rest are optional a
 
 ![Product Screen Shot 2][product-screenshot-2]
 
-This is a screenshot taken right after inputting a search query. As shown, the page is updated dynamically to display the results from the API request. On this page, I can browse through the jobs and click the "+" to add to my favourites (which are the jobs on the home page). After "+" is clicked, a message of "Added" is displayed and the job has been added to the Postgres database and will now be visible on your home page.
+This is a screenshot taken right after searching for stores on the route from Eindhoven to central Luxembourg. As shown, the Google Maps API is used to derive the coordinates of the locations and display the most optimal road route between the two cities. The route is then broken into a set number (currently 10) evenly spaced segments where each segment is represented as coordinates (lat, long). The frontend sends these 10 coordinates to the Python backend where it scrapes the Starbucks store locator website for nearby stores around these coordinates. The stores are filtered (to ensure no repeats from stores detected in multiple calls) and their coordinates are sent to the frontend where they are displayed as red markers on the map as shown above.
 <br /><br />
 
 ![Product Screen Shot 3][product-screenshot-3]
 
-This is the page right after clicking the "Search" button on the top right of the page for my input search term. The jobs displayed here are selected from my favourites (on home page) based on your search query matches. It is now much more easier to search for jobs you have saved rather than going through a large list of jobs on the home page if you would only like to see a few at a time.
+Here is a screenshot of zooming in and hovering over a store in Maastricht on the route. It tells you if the store accomadates drive thru availability, which might be a factor when stopping for coffee.
 <br /><br />
 
-The job posts themselves are clickable which take you to the redirect URL for the job postings (either the job is listed on Adzuna directly or a third-party website).
+![Product Screen Shot 4][product-screenshot-4]
+
+This is a screenshot of the Google API call returning a reply in which it failed to obtain a driving route from the origin to destination, so the app takes impossible inputs into account as well.
+<br /><br />
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -236,11 +239,10 @@ The job posts themselves are clickable which take you to the redirect URL for th
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add ability to save jobs to favorites (Home)
-- [x] Search a wide variety of countries
-- [ ] Additional safety features
-    - [ ] Handling of API credentials
-    - [ ] Basic authentication
+- [x] Add ability to show drive thru capability
+- [ ] Additional features when hovering over
+    - [ ] Further amenities
+    - [ ] Store hours
 
 <!-- See the [open issues](https://github.com/accc2023/personal-job-portal/issues) for a full list of proposed features (and known issues). -->
 
@@ -319,9 +321,10 @@ Project Link: [https://github.com/accc2023/personal-job-portal](https://github.c
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/arhan-chhabra
 [product-screenshot]: images/ex.png
-[product-screenshot-1]: images/ExSearchWithoutResult.png
-[product-screenshot-2]: images/ExSearchWithResult.png
-[product-screenshot-3]: images/ExSearchLocal.png
+[product-screenshot-1]: images/mainScreen.png
+[product-screenshot-2]: images/basicResult.png
+[product-screenshot-3]: images/hoverOverStore.png
+[product-screenshot-4]: images/impossbileSearch.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
