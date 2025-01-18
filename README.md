@@ -41,7 +41,7 @@
     <br /><br />
     The frontend was built by adapting a simple HTML template that utilizes CSS and Bootstrap. The frontend is responsible for collecting and passing user input as well as displaying the map from the Google Maps API. This was integrated with HTML and JavaScript directly.
     <br /><br />
-    Simply put, the 
+    Feel free to scroll down for screenshots and further details.
     <br /><br />
     <a href="https://github.com/accc2023/starbucks-locator-on-route"><strong>Explore the docs »</strong></a>
     <br />
