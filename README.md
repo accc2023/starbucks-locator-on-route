@@ -100,11 +100,11 @@
 
 <!-- * [![Next][Next.js]][Next-url] -->
 
-* ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-* ![REST API](https://img.shields.io/badge/REST-02569B?style=for-the-badge&logo=rest&logoColor=white)
-* ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
-* [![React][React.js]][React-url]
-* ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+* ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+* ![Flask](https://img.shields.io/badge/Flash-E34F26?style=for-the-badge&logo=adobe&logoColor=white)
+* ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+* [![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+* ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 <!-- * [![JQuery][JQuery.com]][JQuery-url] -->
 
@@ -124,14 +124,7 @@ To get a local copy up and running follow these simple example steps. -->
 Ensure that following technologies are installed:
 
 <!-- Replace Java 17+ with Java 21? -->
-- Install [Java 17+](https://www.oracle.com/java/technologies/javase-downloads.html) (required for Spring Boot backend).
-- Install [Node.js and npm](https://nodejs.org/) (required for the React frontend).
-- Install [PostgreSQL](https://www.postgresql.org/download/) and [pgAdmin](https://www.pgadmin.org/download/) (required for the database).
-
-<!-- * npm
-  ```sh
-  npm install npm@latest -g
-  ``` -->
+- Install [Python 3] (required for running the backend).
 
 
 ### Installation
@@ -320,11 +313,11 @@ Project Link: [https://github.com/accc2023/personal-job-portal](https://github.c
 [license-url]: https://github.com/accc2023/personal-job-portal/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/arhan-chhabra
-[product-screenshot]: images/ex.png
+[product-screenshot]: images/mainScreen.png
 [product-screenshot-1]: images/mainScreen.png
 [product-screenshot-2]: images/basicResult.png
 [product-screenshot-3]: images/hoverOverStore.png
-[product-screenshot-4]: images/impossbileSearch.png
+[product-screenshot-4]: images/impossibleSearch.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
